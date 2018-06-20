@@ -1,0 +1,14 @@
+.App {
+  flex-direction: row
+}
+
+.Collection{
+  display: flex;
+  order: 1
+}
+
+.Navbar {
+  position: fixed;
+  display: inline-block;
+  order: 2
+}
