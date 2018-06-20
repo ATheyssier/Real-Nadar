@@ -31,6 +31,7 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
+        <Router>
             <div className='Navbar'>
               <ul>
                 <li><Link to="/"><img src={Home} alt='Home'/></Link></li>
@@ -39,14 +40,13 @@ class App extends Component {
                 <li><Link to="/shop"><img src={Boutique} alt='Shop'/></Link></li>
                 <li><Link to="/profil"><img src={Profil} alt='Profil'/></Link></li>
               </ul>
-            </div>
-              <Router>
 
               <Route exact path="/" component={HomePage} />
               <Route exact path="/musée" component={GamePage} />
               <Route exact path="/puzzle" component={CollectionPage} />
               <Route exact path="/shop" component={ShopPage} />
               <Route exact path="/profil" component={ProfilPage} />
+            </div>
           </Router>
       </div>
     )
