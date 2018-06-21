@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import image1 from  '../Icones/Nadar-Sarah-Bernhardt.jpg'
 import image2 from '../Icones/point-dinterrogation.jpg'
 
-import '../Style/Collection.css'
+import '../Style/App.css'
 
 
 class Collection extends Component {
@@ -21,9 +21,6 @@ render() {
         <table>
           <tbody>
             <tr>
-              <th></th>
-            </tr>
-            <tr>
               <td><img src={image1} alt='Nadar-Sarah-Bernhardt'/></td>
               <td><img className='img2' src={image2} alt='point d_interrogation'/></td>
               <td><img className='img2' src={image2} alt='point d_interrogation'/></td>
@@ -39,9 +36,6 @@ render() {
         <table>
           <tbody>
             <tr>
-              <th></th>
-            </tr>
-            <tr>
               <td><img className='img2' src={image2} alt='point d_interrogation'/></td>
               <td><img className='img2' src={image2} alt='point d_interrogation'/></td>
               <td><img className='img2' src={image2} alt='point d_interrogation'/></td>
@@ -56,9 +50,6 @@ render() {
         <h3>Au delà du portrait, la promotion de la photographie</h3>
         <table>
           <tbody>
-            <tr>
-              <th></th>
-            </tr>
             <tr>
               <td><img className='img2' src={image2} alt='point d_interrogation'/></td>
               <td><img className='img2' src={image2} alt='point d_interrogation'/></td>

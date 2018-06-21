@@ -1,14 +1,40 @@
 .App {
-  flex-direction: row
-}
-
-.Collection{
-  display: flex;
-  order: 1
 }
 
 .Navbar {
   position: fixed;
+  bottom: 0;
+}
+
+.Navbar ul {
+}
+
+.Navbar ul li {
   display: inline-block;
-  order: 2
+  text-decoration: none;
+  padding: 0 1em;
+}
+
+.Navbar img {
+  width: 25px;
+}
+
+.Collection {
+  text-align: center;
+  position: absolute;
+  bottom: 300%
+}
+
+.Collection h3 {
+  color: red;
+}
+
+.Shop {
+  position: absolute;
+  bottom: 100%
+}
+
+.Profil {
+  position: absolute;
+  bottom: 100% 
 }
