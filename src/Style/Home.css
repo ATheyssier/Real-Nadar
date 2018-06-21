@@ -1,5 +1,31 @@
-h1{
+.HomePage h1{
   color: #8E7052;
   text-align: center;
   margin-top: 0;
+  margin-left: 25%;
+}
+
+.HomePage .imgBvn{
+  height: 85%;
+  width: 95%;
+  margin-left: 15%;
+  margin-right: 35%;
+}
+
+.HomePage .ez{
+  text-align: center;
+  margin-left: 25%;
+  font-size: 17px;
+  margin-top: 10%;
+}
+
+.HomePage input{
+  background-color: #FF512E;
+  color: white;
+  border: none;
+  text-align: center;
+  margin-left: 35%;
+  font-size: 25px;
+  padding: 5px 45px;
+  border-radius: 25px;
 }
