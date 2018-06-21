@@ -1,22 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Pathway+Gothic+One');
+
 .HomePage h1{
   color: #8E7052;
-  text-align: center;
-  margin-top: 0;
-  margin-left: 25%;
+  margin-top: -15%;
+  margin-left: 35%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 1;
+  letter-spacing: -1px;
+  position: absolute;
 }
 
 .HomePage .imgBvn{
-  height: 85%;
-  width: 95%;
+  height: 75%;
+  width: 80%;
   margin-left: 15%;
   margin-right: 35%;
 }
 
 .HomePage .ez{
   text-align: center;
-  margin-left: 25%;
-  font-size: 17px;
+  margin-left: 20%;
+  margin-right: 10%;
   margin-top: 10%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 1;
+  font-size: 16px;
 }
 
 .HomePage input{
@@ -24,8 +32,39 @@
   color: white;
   border: none;
   text-align: center;
-  margin-left: 35%;
-  font-size: 25px;
-  padding: 5px 45px;
+  margin-left: 32%;
+  font-size: 20px;
+  padding: 10px 50px;
   border-radius: 25px;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-weight: 1;
+  letter-spacing: 2px;
+}
+
+.HomePage .Lé3pou1{
+  text-align: center;
+  display: inline-flex;
+  margin-left: 31%;
+  position: absolute;
+  margin-top: -12%;
+}
+
+.HomePage .Lé3pou1 .Non{
+  color: lightgrey;
+  margin-left: 400%;
+  font-size: 25px;
+}
+
+.HomePage .Lé3pou1 .Oui{
+  color: #ff512e;
+  position: absolute;
+  font-size: 40px;
+  margin-top: 88%;
+  margin-left: 480%;
+}
+.HomePage .Lé3pou1 .Non1{
+  color: lightgrey;
+  margin-left: 150%;
+  font-size: 25px;
+  margin-right: 200%;
 }
