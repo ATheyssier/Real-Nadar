@@ -15,13 +15,14 @@ import Profil from './Icones/profil.svg'
 
 import HomePage from './Containers/Home.js'
 import GamePage from './Containers/Game.js'
+import DétailsPage from './Containers/Détails.js'
 import CollectionPage from './Containers/Collection.js'
 import ShopPage from './Containers/Shop.js'
+import PanierPage from './Containers/Panier.js'
 import ProfilPage from './Containers/Profil.js'
 
 // Style
 
-import './Style/Navbar.css'
 import './Style/App.css'
 
 // Render
@@ -31,6 +32,7 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
+        <Router>
             <div className='Navbar'>
               <ul>
                 <li><Link to="/"><img src={Home} alt='Home'/></Link></li>
@@ -39,14 +41,15 @@ class App extends Component {
                 <li><Link to="/shop"><img src={Boutique} alt='Shop'/></Link></li>
                 <li><Link to="/profil"><img src={Profil} alt='Profil'/></Link></li>
               </ul>
-            </div>
-              <Router>
 
               <Route exact path="/" component={HomePage} />
               <Route exact path="/musée" component={GamePage} />
               <Route exact path="/puzzle" component={CollectionPage} />
+              <Route exact path="/details" component={DétailsPage} />
               <Route exact path="/shop" component={ShopPage} />
+              <Route exact path="/panier" component={PanierPage} />
               <Route exact path="/profil" component={ProfilPage} />
+            </div>
           </Router>
       </div>
     )

@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
 import image1 from  '../Icones/Nadar-Sarah-Bernhardt.jpg'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import image2 from '../Icones/point-dinterrogation.jpg'
 
-import '../Style/Collection.css'
-
+import '../Style/App.css'
 
 class Collection extends Component {
 render() {
   return(
     <div className='Collection'>
+
+      <h1>TROUVER LES OEUVRES</h1>
+
       <p> Déhambulez dans l’exposition et rester attentif :
       votre téléphone se mettra à vibrer à
       proximiter des oeuvres avec un point d’intérêt.. à vous de jouer
@@ -21,10 +24,7 @@ render() {
         <table>
           <tbody>
             <tr>
-              <th></th>
-            </tr>
-            <tr>
-              <td><img src={image1} alt='Nadar-Sarah-Bernhardt'/></td>
+              <td><Link to="/details"><img src={image1} alt='Nadar-Sarah-Bernhardt'/></Link></td>
               <td><img className='img2' src={image2} alt='point d_interrogation'/></td>
               <td><img className='img2' src={image2} alt='point d_interrogation'/></td>
               <td><img className='img2' src={image2} alt='point d_interrogation'/></td>
@@ -38,9 +38,6 @@ render() {
         <h3>Les portraits entre art et industrie</h3>
         <table>
           <tbody>
-            <tr>
-              <th></th>
-            </tr>
             <tr>
               <td><img className='img2' src={image2} alt='point d_interrogation'/></td>
               <td><img className='img2' src={image2} alt='point d_interrogation'/></td>
@@ -56,9 +53,6 @@ render() {
         <h3>Au delà du portrait, la promotion de la photographie</h3>
         <table>
           <tbody>
-            <tr>
-              <th></th>
-            </tr>
             <tr>
               <td><img className='img2' src={image2} alt='point d_interrogation'/></td>
               <td><img className='img2' src={image2} alt='point d_interrogation'/></td>
