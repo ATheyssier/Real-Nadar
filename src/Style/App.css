@@ -36,5 +36,25 @@
 
 .Profil {
   position: absolute;
-  bottom: 100% 
+  bottom: 100%
+}
+
+.Game {
+  position: absolute;
+  bottom: 100%
+}
+
+.Home {
+  position: absolute;
+  bottom: 100%
+}
+
+.Panier {
+  position: absolute;
+  bottom: 100%
+}
+
+.Détails {
+  position: absolute;
+  bottom: 100%
 }

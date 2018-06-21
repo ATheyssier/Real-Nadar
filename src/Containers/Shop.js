@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import PhotoMeuf from '../Icones/Nadar-Sarah-Bernhardt.jpg'
-
+import HomePage from '../Containers/Home.js'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
 class Shop extends Component {
   constructor(props) {
     super(props);
     this.state = {price: ''};
-
   }
 
   Price15 = () => {
@@ -29,9 +29,11 @@ class Shop extends Component {
   Price35 = () => {
     this.setState({price: '35€'})
   }
+
   render() {
     return (
       <div className="Shop">
+      <Link to="/panier"><button>ImagePanier</button></Link>
         <h1>BOUTIQUE</h1>
         <p>Retrouver toutes les reproductions des oeuvres en tirage haute qualité</p>
         <div className="SearchBar">

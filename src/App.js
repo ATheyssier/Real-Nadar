@@ -15,8 +15,10 @@ import Profil from './Icones/profil.svg'
 
 import HomePage from './Containers/Home.js'
 import GamePage from './Containers/Game.js'
+import DétailsPage from './Containers/Détails.js'
 import CollectionPage from './Containers/Collection.js'
 import ShopPage from './Containers/Shop.js'
+import PanierPage from './Containers/Panier.js'
 import ProfilPage from './Containers/Profil.js'
 
 // Style
@@ -43,7 +45,9 @@ class App extends Component {
               <Route exact path="/" component={HomePage} />
               <Route exact path="/musée" component={GamePage} />
               <Route exact path="/puzzle" component={CollectionPage} />
+              <Route exact path="/details" component={DétailsPage} />
               <Route exact path="/shop" component={ShopPage} />
+              <Route exact path="/panier" component={PanierPage} />
               <Route exact path="/profil" component={ProfilPage} />
             </div>
           </Router>
