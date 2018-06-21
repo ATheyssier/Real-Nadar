@@ -22,7 +22,7 @@
 .Collection {
   text-align: center;
   position: absolute;
-  bottom: 300%
+  bottom: 150%
 }
 
 .Collection h3 {
@@ -44,9 +44,9 @@
   bottom: 100%
 }
 
-.Home {
+.HomePage {
   position: absolute;
-  bottom: 100%
+  bottom: 600%
 }
 
 .Panier {

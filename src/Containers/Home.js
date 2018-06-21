@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import image1 from '../Icones/Sarah-Bernhardt-decoupe.png'
+import '../Style/Home.css'
 
-class Home extends Component {
+
+class HomePage extends Component {
   render() {
     return (
-      <div className="Home">
+      <div className="HomePage">
         <h1>BIENVENUE</h1>
         <img src={image1} alt='Nadar-Sarah-Bernhardt'/>
         <p>Participez à notre jeu concours pour avoir une
@@ -15,4 +17,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default HomePage;
