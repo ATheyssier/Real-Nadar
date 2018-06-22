@@ -44,6 +44,58 @@
   bottom: 100%
 }
 
+.Game h1 {
+  color:#8e7052;
+  margin-left: 60px;
+}
+
+.Game p {
+  text-align: center;
+  margin-left: 35px
+}
+
+.Game input {
+  border: none;
+  border-bottom: 2px solid #ff512e;
+  color: #ff512e;
+  padding: 10px 70px 10px 0px;
+  margin-left: 80px
+}
+
+.Game input::placeholder {
+  color: #ff512e
+}
+
+.Game .Indice {
+  border: 1px solid #ff512e;
+  background-color: transparent;
+  color: #ff512e;
+  border-radius: 20px;
+  margin-left: 70px;
+  padding: 15px 35px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+}
+
+.Game img {
+  width: 90px
+}
+
+.Game table {
+  margin-left: 50px
+}
+
+.Game .Valider {
+  border: 1px solid #ff512e;
+  background-color: #ff512e;
+  margin-left: 10px;
+  color: white;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 15px 35px;
+}
+
 .Home {
   position: absolute;
   bottom: 100%

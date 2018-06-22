@@ -13,58 +13,88 @@ import Nsb10 from '../Icones/Nadar-Sarah-Bernhardt_10.jpg'
 import Nsb11 from '../Icones/Nadar-Sarah-Bernhardt_11.jpg'
 import Nsb12 from '../Icones/Nadar-Sarah-Bernhardt_12.jpg'
 
+import '../Style/App.css'
+
 class Game extends Component {
   constructor(props) {
     super(props);
-    this.state = {ImageSrc: {PointI}};
+    this.state = {
+      ImageSrc1: PointI,
+      ImageSrc2: PointI,
+      ImageSrc3: PointI,
+      ImageSrc4: PointI,
+      ImageSrc5: PointI,
+      ImageSrc6: PointI,
+      ImageSrc7: PointI,
+      ImageSrc8: PointI,
+      ImageSrc9: PointI,
+      ImageSrc10: PointI,
+      ImageSrc11: PointI,
+      ImageSrc12: PointI
+    };
   }
 
   Picture1 = () => {
-    this.setState({ImageSrc: {Nsb01}})
+    this.setState({ImageSrc1: Nsb01})
   }
 
   Picture2 = () => {
-    this.setState({ImageSrc: {Nsb02}})
+    this.setState({ImageSrc2: Nsb02})
   }
 
   Picture3 = () => {
-    this.setState({ImageSrc: {Nsb03}})
+    this.setState({ImageSrc3: Nsb03})
   }
 
   Picture4 = () => {
-    this.setState({ImageSrc: {Nsb04}})
+    this.setState({ImageSrc4: Nsb04})
   }
 
   Picture5 = () => {
-    this.setState({ImageSrc: {Nsb05}})
+    this.setState({ImageSrc5: Nsb05})
   }
 
   Picture6 = () => {
-    this.setState({ImageSrc: {Nsb06}})
+    this.setState({ImageSrc6: Nsb06})
   }
 
   Picture7 = () => {
-    this.setState({ImageSrc: {Nsb07}})
+    this.setState({ImageSrc7: Nsb07})
   }
 
   Picture8 = () => {
-    this.setState({ImageSrc: {Nsb08}})
+    this.setState({ImageSrc8: Nsb08})
   }
 
   Picture9 = () => {
-    this.setState({ImageSrc: {Nsb09}})
+    this.setState({ImageSrc9: Nsb09})
   }
 
   Picture10 = () => {
-    this.setState({ImageSrc: {Nsb10}})
+    this.setState({ImageSrc10: Nsb10})
   }
 
   Picture11 = () => {
-    this.setState({ImageSrc: {Nsb11}})
+    this.setState({ImageSrc11: Nsb11})
   }
 
   Picture12 = () => {
-    this.setState({ImageSrc: {Nsb12}})
+    this.setState({ImageSrc12: Nsb12})
+  }
+
+  Randomize = () => {
+    let randomNumber = Math.floor(Math.random() * Math.floor(13))
+    this[`Picture${randomNumber}`]()
+  }
+
+  Win = () => {
+    const content = document.getElementById('Jpp').value.toLowerCase()
+
+    if (content === 'nadar sarah bernhardt') {
+      return alert('GG You won!')
+    } else {
+      return alert(`T'es une merde, idiot`)
+    }
   }
 
   render() {
@@ -74,32 +104,32 @@ class Game extends Component {
         <table>
           <tbody>
           <tr>
-            <td><img src={this.state.ImageSrc} alt=''/></td>
-            <td><img src={this.state.ImageSrc} alt=''/></td>
-            <td><img src={this.state.ImageSrc} alt=''/></td>
+            <td><img src={this.state.ImageSrc1} alt=''/></td>
+            <td><img src={this.state.ImageSrc2} alt=''/></td>
+            <td><img src={this.state.ImageSrc3} alt=''/></td>
           </tr>
           <tr>
-            <td><img src={this.state.ImageSrc} alt=''/></td>
-            <td><img src={this.state.ImageSrc} alt=''/></td>
-            <td><img src={this.state.ImageSrc} alt=''/></td>
+            <td><img src={this.state.ImageSrc4} alt=''/></td>
+            <td><img src={this.state.ImageSrc5} alt=''/></td>
+            <td><img src={this.state.ImageSrc6} alt=''/></td>
           </tr>
           <tr>
-            <td><img src={this.state.ImageSrc} alt=''/></td>
-            <td><img src={this.state.ImageSrc} alt=''/></td>
-            <td><img src={this.state.ImageSrc} alt=''/></td>
+            <td><img src={this.state.ImageSrc7} alt=''/></td>
+            <td><img src={this.state.ImageSrc8} alt=''/></td>
+            <td><img src={this.state.ImageSrc9} alt=''/></td>
           </tr>
           <tr>
-            <td><img src={this.state.ImageSrc} alt=''/></td>
-            <td><img src={this.state.ImageSrc} alt=''/></td>
-            <td><img src={this.state.ImageSrc} alt=''/></td>
+            <td><img src={this.state.ImageSrc10} alt=''/></td>
+            <td><img src={this.state.ImageSrc11} alt=''/></td>
+            <td><img src={this.state.ImageSrc12} alt=''/></td>
           </tr>
         </tbody>
         </table>
         <p>Trouver le nom de la personnalité prise en photo par Nadar</p>
-        <input type="text" />
+        <input type="text" id="Jpp" placeholder="Nom et Prénom"/>
         <br />
-        <button>INDICE</button>
-        <button>VALIDER</button>
+        <button onClick={this.Randomize} className="Indice">INDICE</button>
+        <button onClick={this.Win} className="Valider">VALIDER</button>
       </div>
     );
   }
