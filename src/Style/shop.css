@@ -1,0 +1,32 @@
+.Shop .foto {
+  width: 25%;
+  height: 25%;
+}
+
+.Shop .zizou{
+  margin-left: 30%;
+  margin-top: -30%;
+}
+
+.Shop .btn1{
+  margin-left: 30%;
+}
+
+.Shop .Price{
+  margin-left: 30%;
+}
+
+.Shop .pipo{
+  margin-left: 50%;
+  margin-top: -20%;
+}
+
+.Shop h1{
+  color: #8E7052;
+  margin-top: -15%;
+  margin-left: 35%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 1;
+  letter-spacing: -1px;
+  position: absolute;
+}

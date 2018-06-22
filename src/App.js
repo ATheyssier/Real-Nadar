@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import '../node_modules/video-react/dist/video-react.css'
 
 // Images
 
@@ -20,6 +21,7 @@ import CollectionPage from './Containers/Collection.js'
 import ShopPage from './Containers/Shop.js'
 import PanierPage from './Containers/Panier.js'
 import ProfilPage from './Containers/Profil.js'
+import VideoPage from './Containers/Video.js'
 
 // Style
 
@@ -49,7 +51,8 @@ class App extends Component {
               <Route exact path="/shop" component={ShopPage} />
               <Route exact path="/panier" component={PanierPage} />
               <Route exact path="/profil" component={ProfilPage} />
-            </div>
+              <Route exact path="/video" component={VideoPage} />
+              </div>
           </Router>
       </div>
     )
