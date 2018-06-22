@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Pathway+Gothic+One');
+
 .App {
 }
 
@@ -22,11 +24,62 @@
 .Collection {
   text-align: center;
   position: absolute;
-  bottom: 300%
+  bottom: 150%;
+  margin-left: 70px;
+  font-family: 'Open Sans'
+}
+
+.Collection p {
+  margin-left: -50px;
+  padding: 0 20px
+}
+
+.Collection input {
+  border: 1px solid #ff512e;
+  background-color: #ff512e;
+  margin-left: 10px;
+  color: white;
+  border-radius: 40px;
+  margin-top: 10px;
+  padding: 15px 35px;
+  margin-left: -45px;
+  font-weight: bolder;
+  font-size: 20px
+
+}
+
+.Collection img {
+  width: 85px;
+  box-shadow: 1px 2px 2px 1px lightgrey;
+  margin-right: 5px;
+}
+
+.Collection table {
+  margin-left: -50px;
+
+}
+
+.Collection .img2 {
+  padding-top: 19px;
+  padding-bottom: 19px
+}
+
+.Collection h1 {
+  color: #8e7052;
+  margin-left: -45px
+
 }
 
 .Collection h3 {
-  color: red;
+  color: #8e7052;
+  margin-left: -45px;
+  margin-top: 25px
+}
+
+.Collection hr {
+  margin-left: -50px;
+  width: 200px;
+  margin-left: 42px
 }
 
 .Shop {
@@ -41,17 +94,19 @@
 
 .Game {
   position: absolute;
-  bottom: 100%
+  bottom: 100%;
+  font-family: 'Open Sans'
 }
 
 .Game h1 {
   color:#8e7052;
-  margin-left: 60px;
+  margin-left: 95px;
 }
+
 
 .Game p {
   text-align: center;
-  margin-left: 35px
+  margin-left: 50px
 }
 
 .Game input {
@@ -79,7 +134,9 @@
 }
 
 .Game img {
-  width: 90px
+  width: 90px;
+  margin-left: 5px;
+  border: 1px solid #8e7052
 }
 
 .Game table {

@@ -46,25 +46,9 @@ render() {
             </tr>
         </tbody>
         </table>
-        <input className='button' type='button' value='UTILISER LE SCAN'/>
       </div>
 
-      <div className="Au_dela_du_portrait_virgule_la_promotion_de_la_photographie">
-        <h3>Au delà du portrait, la promotion de la photographie</h3>
-        <table>
-          <tbody>
-            <tr>
-              <td><img className='img2' src={image2} alt='point d_interrogation'/></td>
-              <td><img className='img2' src={image2} alt='point d_interrogation'/></td>
-              <td><img className='img2' src={image2} alt='point d_interrogation'/></td>
-              <td><img className='img2' src={image2} alt='point d_interrogation'/></td>
-            </tr>
-        </tbody>
-        </table>
-        <input className='button' type='button' value='UTILISER LE SCAN'/>
       </div>
-
-    </div>
     );
   }
 }
